@@ -1,6 +1,7 @@
 import flet as ft
 
 def main(page: ft.Page):
+
     page.title = "App Azul Pastel"
 
     page.window_width = 350
@@ -36,8 +37,7 @@ def main(page: ft.Page):
         border_color="#8EC5FC",
         focused_border_color="#5DADE2",
         bgcolor="#F4FBFF",
-        color="#3A6EA5",
-        label_style=ft.TextStyle(color="#5B8FB9")
+        color="#3A6EA5"
     )
 
     def cambiar_texto(e):
@@ -46,7 +46,7 @@ def main(page: ft.Page):
         page.update()
 
     boton1 = ft.ElevatedButton(
-        text="Mostrar mensaje",
+        "Mostrar mensaje",
         on_click=cambiar_texto,
         bgcolor="#8EC5FC",
         color="white",
